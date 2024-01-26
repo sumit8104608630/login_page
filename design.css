@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.design{
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    scale: 100px;
+    z-index: 1;
+
+    
+}
+body{
+    overflow: hidden;
+    height: 100vh;
+    background-size: 400% 400%;
+    background-image: linear-gradient(180deg,black,rgb(20, 30, 18),rgb(0, 255, 0));
+    animation: bg 5s ease infinite;
+}
+@keyframes bg {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+.subbox{
+    height: fit-content;
+    width: fit-content;
+    display: flexbox;
+    
+}
+.email,.pass{
+    border: none;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px 20px;
+    width: 200px;
+    height: 25px;
+    background-color: rgb(58, 58, 58);
+    outline: none;
+}
+.email,.pass:focus{
+    
+}
+.box{
+    margin: 1px;
+    height: 100px;
+    width: 100px;
+   background-color: rgb(43, 42, 42);
+   transition:background-color 2s ease;
+}
+.box:hover{
+
+    background-color:rgb(0, 255, 0) ;
+    transition:background-color 0s ease;
+}
+.sign{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+    background-color: rgb(33, 33, 33);
+    color: white;
+    z-index: 2;
+    position: absolute;
+    bottom: 40%;
+    left: 40%;
+    box-shadow: 0 0 30px 0 rgb(0, 0, 0)
+    
+}
+.sp{
+font-size: 1rem;
+color: rgb(0, 255, 0);
+margin: 2px 15px;
+}
+.fg{
+    font-size: 1rem;
+    margin: 2px 21px;
+}
+.ss{
+    display: flex;
+    flex-direction: column;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+   
+}
+.btn{
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin: 20px 80px;
+    border: none;
+    font-size: 1rem;
+    background-color: rgb(0, 255, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.btn:hover{
+    background-color: rgba(7, 251, 7, 0.7);
+}
+.tag{
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px 70px;
+    color: rgb(0, 255, 0);
+}
